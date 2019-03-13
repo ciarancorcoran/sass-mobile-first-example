@@ -1,0 +1,267 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="scss/main.css">
+        <link rel="stylesheet" href="css/icomoon-style.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+        <script type="text/javascript">
+        	/* SHOW/HIDE Mobile Menu */
+	        var app = angular.module('MyApp', [])
+	        app.controller('MyController', function ($scope) {
+	            //This will hide the DIV by default.
+	            $scope.IsHidden = true;
+	            $scope.ShowHide = function () {
+	                //If DIV is hidden it will be visible and vice versa.
+	                $scope.IsHidden = $scope.IsHidden ? false : true;
+	            }
+	        });
+	    </script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<header ng-app="MyApp" ng-controller="MyController">
+			<div class="icons clearfix">
+				<div class="icons-left">
+					<a class="icon-search menu-icon"></a>
+					<a href="" class="icon-logo menu-icon"></a>
+				</div>
+				<div class="icons-right">
+					<a href="">£100</a>
+					<a href="" class="menu-icon menu-icon-user">
+						<i class="icon-account"></i>
+					</a>
+					<a href="" class="menu-icon hidden-sm" value="Show Hide DIV" ng-click="ShowHide()">
+						<i class="icon-burger"></i>
+					</a>
+				</div>
+			</div>
+			<ul class="desktop-menu hidden-xs clearfix">
+					<li>
+						<a href="">Articles</a>
+					</li>
+					<li>
+						<a href="">Brand Promotion</a>
+					</li>
+					<li>
+						<a href="">Rewards</a>
+					</li>
+					<li>
+						<a href="">Help</a>
+					</li>
+					<li>
+						<a href="">About us</a>
+					</li>
+				</ul>
+			<div class="menu" ng-hide="IsHidden">
+				<!--div class="game-nav">
+					<div class="col-xs-6">
+						<a href="">
+							<i class="icon-popular_games"></i>
+							Popular games
+						</a>
+					</div>
+					<div class="col-xs-6">
+						<a href="">
+							<i class="icon-popular_games"></i>
+							Popular games
+						</a>
+					</div>
+					<div class="col-xs-6">
+						<a href="">
+							<i class="icon-popular_games"></i>
+							Popular games
+						</a>
+					</div>
+					<div class="col-xs-6">
+						<a href="">
+							<i class="icon-popular_games"></i>
+							Popular games
+						</a>
+					</div>
+					<div class="col-xs-6">
+						<a href="">
+							<i class="icon-popular_games"></i>
+							Popular games
+						</a>
+					</div>
+					<div class="col-xs-6">
+						<a href="">
+							<i class="icon-popular_games"></i>
+							Popular games
+						</a>
+					</div>
+				</div-->
+				<ul class="page-nav">
+					<li>
+						<a href="">Articles <i class="icon-arrow"></i></a>
+					</li>
+					<li>
+						<a href="">Brand Promotion <i class="icon-arrow"></i></a>
+					</li>
+					<li>
+						<a href="">Rewards <i class="icon-arrow"></i></a>
+					</li>
+					<li>
+						<a href="">Help <i class="icon-arrow"></i></a>
+					</li>
+					<li>
+						<a href="">About us <i class="icon-arrow"></i></a>
+					</li>
+				</ul>
+			</div>
+
+		</header>
+
+		<section class="hero-section">
+			<div class="container">
+				<ul class="nav nav-tabs" id="heroTab">
+					<li class="active">
+						<a href="#hero1">Featured</a>
+					</li>
+					<li>
+						<a href="#hero2">Last played</a>
+					</li>
+					<li>
+						<a href="#hero3">Most played</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div id="hero1" class="tab-pane active">
+						<div class="hero-item-list">
+							<div class="col-xs-6">
+								<a href="" class="hero-item-tile text-center display-block">
+									<img src="img/game-1.png" alt="hero-game" />
+									<h3>HEROES CHARGE</h3>
+								</a>
+							</div>
+							<div class="col-xs-6">
+								<a href="" class="hero-item-tile text-center display-block">
+									<img src="img/game-2.png" alt="hero-game" />
+									<h3>POU</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="hero2" class="tab-pane">
+						<div class="hero-item-list">
+							<div class="col-xs-6">
+								<a href="" class="hero-item-tile text-center display-block">
+									<img src="img/game-2.png" alt="hero-game" />
+									<h3>POU</h3>
+								</a>
+							</div>
+							<div class="col-xs-6">
+								<a href="" class="hero-item-tile text-center display-block">
+									<img src="img/game-1.png" alt="hero-game" />
+									<h3>HEROES CHARGE</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="hero3" class="tab-pane">
+						<div class="hero-item-list">
+							<div class="col-xs-6">
+								<a href="" class="hero-item-tile text-center display-block">
+									<img src="img/game-2.png" alt="hero-game" />
+									<h3>POU</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-content">
+			<div class="container">
+
+				<ul class="main-content-nav text-center clearfix">
+					<li class="main-content-nav-selected">
+						<a href="" class="display-block">
+							<i class="icon-popular_games"></i>
+							<h3>Popular games</h3>
+						</a>
+					</li>
+					<li>
+						<a href="" class="display-block">
+							<i class="icon-adventure_games"></i>
+							<h3>Adventure games</h3>
+						</a>
+					</li>
+				</ul>
+				<div id="main-content-item-list" class="main-content-item-list">
+					<!-- item array to display here -->
+				</div>
+			</div>
+		</section>
+
+		<footer class="text-center">
+			<ul>
+				<li>TERMS OF SERVICE</li>
+				<li>FORMS + AGREEMENTS</li>
+				<li>HELP</li>
+			</ul>
+			<ul class="social-icons">
+				<li>
+					<a href="http://facebook.com" class="icon-fb"></a>
+				</li>
+				<li>
+					<a href="" class="icon-twitter"></a>
+				</li>
+				<li>
+					<a href="" class="icon-blog"></a>
+				</li>
+			</ul>
+
+			<div class="footer-brand">
+				<i class="icon-logo"></i>
+			</div>
+
+			<div class="legals">
+				<p>Brand-X is a registered trademark. All rights reserved.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet viverra enim, quis mattis lectus pellentesque a. Ut diam orci, venenatis quis erat vel, tempus bibendum arcu.</p>
+			</div>
+		</footer>
+
+
+		<!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+        	/* TABS */
+	        $('#heroTab a').click(function (e) {
+			  e.preventDefault();
+			  $(this).tab('show');
+			});
+	    </script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+header {
+	.menu {
+		position:absolute;
+		width: 100%;
+		background-color: $dark-grey-bkf;
+		z-index: 9999;
+
+		.game-nav {
+			margin: 0 auto;
+			background-color: $white-bkg;
+			@include border-radius(25px);
+		}
+
+		ul {
+			@include list-style(0, none);
+			margin-bottom: 0;
+
+			li {
+				@include list-item-style(block, 0);
+				border-top: 1px solid #fff;
+				padding: {
+					left: 20px;
+					right: 20px;
+					bottom: 15px;
+					top: 15px;
+				}
+
+				a {
+					display: $display-block;
+				}
+
+				a, i {
+					color: $font-color-white;
+				}
+
+				i {
+					font-size: 17px;
+					float: right;
+					-webkit-transform: rotate(180deg);
+					   -moz-transform: rotate(180deg);
+					    -ms-transform: rotate(180deg);
+					        transform: rotate(180deg);
+				}
+			}
+		}
+	}
+
+	.desktop-menu {
+		@include list-style(0, none);
+		margin-bottom: 0;
+
+		li {
+			float: left;
+			padding:20px;
+
+			a {
+				color:$font-main-color;
+			}
+		}
+	}
+}

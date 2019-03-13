@@ -1,0 +1,41 @@
+//----------------------------------*\
+// SCSS Variables
+//----------------------------------*/
+
+@import '_vars.scss';
+
+//----------------------------------*\
+// SCSS Mixins
+//----------------------------------*/
+@import '_mixins.scss';
+
+//----------------------------------*\
+// SCSS Header
+//----------------------------------*/
+@import '_header.scss';
+
+//----------------------------------*\
+// SCSS Footer
+//----------------------------------*/
+@import '_footer.scss';
+
+//----------------------------------*\
+// SCSS Fonts
+//----------------------------------*/
+@import '_fonts.scss';
+
+//----------------------------------*\
+// SCSS Content
+//----------------------------------*/
+@import '_header-menu.scss';
+@import '_hero-section.scss';
+@import '_body-content.scss';
+
+body {
+	background-color: $body-bkg;
+}
+
+/* HELPERS */
+.display-block {
+	display: block;
+}
